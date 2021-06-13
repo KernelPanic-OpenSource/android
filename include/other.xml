@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="gitea"
+          fetch="https://gitea.com/sbwml" />
+    
+    <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" revision="refs/tags/android-10.0.0_r46" />
+    <project path="packages/apps/Email" name="platform/packages/apps/Email" revision="refs/tags/android-10.0.0_r46" />
+    <project path="vendor/apps/FaceUnlock" name="vendor_apps_FaceUnlock" revision="11" remote="gitea" />
+</manifest>

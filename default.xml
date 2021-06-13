@@ -831,4 +831,15 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+  <!-- Remove unused AOSP repos -->
+  <include name="include/remove.xml" />
+
+  <!-- Add some LineageOS repos -->
+  <include name="include/lineage.xml" />
+
+  <!-- Add all AOSP repos -->
+  <include name="include/aosp.xml" />
+  
+  <!-- Add all Other repos -->
+  <include name="include/other.xml" />
 </manifest>
