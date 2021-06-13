@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="KO"
+  <remote name="ko"
           fetch="https://github.com/KernelPanic-OpenSource"
-          revision="refs/heads/11" />
+          revision="11" />
 
   <remote name="gitlab"
           fetch="https://gitlab.com" />
 
   <!-- CodeAurora additions -->
-  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="KO" />
-  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom-caf_audio_msm8998" remote="KO" />
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom-caf_display_msm8998" remote="KO" />
-  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom-caf_media_msm8998" remote="KO" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="KO" />
-  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="KO" />
-  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="KO" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="KO" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="KO" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="ko" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom-caf_audio_msm8998" remote="ko" />
+  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom-caf_display_msm8998" remote="ko" />
+  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom-caf_media_msm8998" remote="ko" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="ko" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="ko" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="ko" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="ko" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="ko" />
   
   <!-- General repos -->
-  <project path="build/make" name="android_build" remote="KO">
+  <project path="build/make" name="android_build" remote="ko">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -29,58 +29,58 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="android_build_soong" remote="KO" >
+  <project path="build/soong" name="android_build_soong" remote="ko" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bionic" name="android_bionic" remote="KO" />
-  <project path="build/blueprint" name="android_build_blueprint" remote="KO" />
-  <project path="device/custom/sepolicy" name="android_device_custom_sepolicy" remote="KO" />
-  <project path="vendor/aosp" name="android_vendor_aosp" remote="KO" />
-  <project path="vendor/support" name="android_vendor_support" remote="KO" />
+  <project path="bionic" name="android_bionic" remote="ko" />
+  <project path="build/blueprint" name="android_build_blueprint" remote="ko" />
+  <project path="device/custom/sepolicy" name="android_device_custom_sepolicy" remote="ko" />
+  <project path="vendor/aosp" name="android_vendor_aosp" remote="ko" />
+  <project path="vendor/support" name="android_vendor_support" remote="ko" />
   
   <!-- External repos -->
-  <project path="external/exfat" name="android_external_exfat" remote="KO" />
-  <project path="external/external_ntfs-3g" name="android_external_ntfs-3g" remote="KO" />
-  <project path="external/tinycompress" name="android_external_tinycompress" remote="KO" />
+  <project path="external/exfat" name="android_external_exfat" remote="ko" />
+  <project path="external/external_ntfs-3g" name="android_external_ntfs-3g" remote="ko" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="ko" />
   
   <!-- Hardware repos -->
-  <project path="hardware/custom/interfaces" name="android_hardware_custom_interfaces" remote="KO" />
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="KO" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="KO" />
+  <project path="hardware/custom/interfaces" name="android_hardware_custom_interfaces" remote="ko" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="ko" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="ko" />
   
   <!-- Framework repos -->
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="KO" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="KO" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="KO" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="KO" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="KO" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="ko" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ko" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="ko" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="ko" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="ko" />
   
   <!-- Prebuilts Repos -->
-  <project path="prebuilts/clang/host/linux-x86/clang-r412851" name="android_prebuilts_clang_host_linux-x86_clang-r412851" remote="KO" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r412851" name="android_prebuilts_clang_host_linux-x86_clang-r412851" remote="ko" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="KO" />
-  <project path="packages/apps/CarrierConfig" name="android_packages_apps_CarrierConfig" remote="KO" />
-  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="KO" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="KO" />
-  <project path="packages/apps/Etar" name="android_packages_apps_Etar" remote="KO" />
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="KO" />
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="KO" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="KO" />
-  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="KO" />
-  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="KO" />
-  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="KO" />
-  <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="KO" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="ko" />
+  <project path="packages/apps/CarrierConfig" name="android_packages_apps_CarrierConfig" remote="ko" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="ko" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="ko" />
+  <project path="packages/apps/Etar" name="android_packages_apps_Etar" remote="ko" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="ko" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="ko" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ko" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="ko" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="ko" />
+  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="ko" />
+  <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="ko" />
   
   <!-- Recovery Repos -->
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="KO" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="ko" />
 
   <!-- System Repos -->
-  <project path="system/bt" name="android_system_bt" remote="KO" />
-  <project path="system/core" name="android_system_core" remote="KO" />
-  <project path="system/vold" name="android_system_vold" remote="KO" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="KO" />
-  <project path="system/update_engine" name="android_system_update_engine" remote="KO" />
+  <project path="system/bt" name="android_system_bt" remote="ko" />
+  <project path="system/core" name="android_system_core" remote="ko" />
+  <project path="system/vold" name="android_system_vold" remote="ko" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="ko" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="ko" />
   
 </manifest>
