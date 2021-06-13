@@ -3,6 +3,8 @@ Credits:
  * [**AOSP**](https://android.googlesource.com)
  * [**LineageOS**](https://github.com/LineageOS)
  * [**AOSP-11**](https://github.com/AOSP-11)
+ * [**Octavi**](https://github.com/Octavi-OS)
+ * [**CherishOS**](https://github.com/CherishOS)
 ----------------------------------------------------------------------------
 
 Getting Started:

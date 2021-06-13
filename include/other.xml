@@ -2,8 +2,21 @@
 <manifest>
   <remote name="gitea"
           fetch="https://gitea.com/sbwml" />
-    
-    <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" revision="refs/tags/android-10.0.0_r46" />
-    <project path="packages/apps/Email" name="platform/packages/apps/Email" revision="refs/tags/android-10.0.0_r46" />
-    <project path="vendor/apps/FaceUnlock" name="vendor_apps_FaceUnlock" revision="11" remote="gitea" />
+
+  <remote  name="octavi"
+           fetch="https://github.com/Octavi-OS"
+           revision="refs/heads/11" />
+
+  <remote name="cherish"
+          fetch="https://github.com/CherishOS"
+          revision="refs/heads/eleven" />    
+
+  <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" revision="refs/tags/android-10.0.0_r46" />
+  <project path="packages/apps/Email" name="platform/packages/apps/Email" revision="refs/tags/android-10.0.0_r46" />
+  <project path="vendor/apps/FaceUnlock" name="vendor_apps_FaceUnlock" revision="11" remote="gitea" />
+
+  <!-- Prebuilt repos -->
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="octavi" clone-depth="1" />
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" clone-depth="1" remote="cherish" />
+
 </manifest>
