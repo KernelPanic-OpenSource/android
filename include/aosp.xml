@@ -38,6 +38,7 @@
   <project path="device/custom/sepolicy" name="android_device_custom_sepolicy" remote="ko" />
   <project path="vendor/aosp" name="android_vendor_aosp" remote="ko" />
   <project path="vendor/support" name="android_vendor_support" remote="ko" />
+  <project path="platform_testing" name="android_platform_testing" remote="ko" />
   
   <!-- External repos -->
   <project path="external/exfat" name="android_external_exfat" remote="ko" />
