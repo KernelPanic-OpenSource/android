@@ -74,6 +74,7 @@
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="ko" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="ko" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="ko" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ko" />
   
   <!-- Recovery Repos -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="ko" />
